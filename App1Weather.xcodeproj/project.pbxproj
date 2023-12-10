@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92740AC1687ABF8EE741AEB4 /* Pods_App1Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272E3C4B30A42787AFD9FD25 /* Pods_App1Weather.framework */; };
 		964B8C932B252298000FBE5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964B8C922B252298000FBE5D /* AppDelegate.swift */; };
 		964B8C952B252298000FBE5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964B8C942B252298000FBE5D /* SceneDelegate.swift */; };
 		964B8C972B252298000FBE5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964B8C962B252298000FBE5D /* ViewController.swift */; };
 		964B8C9A2B252298000FBE5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964B8C982B252298000FBE5D /* Main.storyboard */; };
 		964B8C9C2B25229E000FBE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964B8C9B2B25229E000FBE5D /* Assets.xcassets */; };
 		964B8C9F2B25229E000FBE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964B8C9D2B25229E000FBE5D /* LaunchScreen.storyboard */; };
+		964B8CA72B252373000FBE5D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964B8CA62B252373000FBE5D /* Constants.swift */; };
+		964B8CA92B252454000FBE5D /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964B8CA82B252454000FBE5D /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272E3C4B30A42787AFD9FD25 /* Pods_App1Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App1Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		964B8C8F2B252298000FBE5D /* App1Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App1Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		964B8C922B252298000FBE5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		964B8C942B252298000FBE5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		964B8C9B2B25229E000FBE5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		964B8C9E2B25229E000FBE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		964B8CA02B25229E000FBE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		964B8CA62B252373000FBE5D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		964B8CA82B252454000FBE5D /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		9CB41D68FE13671A09F69694 /* Pods-App1Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App1Weather.release.xcconfig"; path = "Target Support Files/Pods-App1Weather/Pods-App1Weather.release.xcconfig"; sourceTree = "<group>"; };
+		A857D79939C056A1E120D4F4 /* Pods-App1Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App1Weather.debug.xcconfig"; path = "Target Support Files/Pods-App1Weather/Pods-App1Weather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92740AC1687ABF8EE741AEB4 /* Pods_App1Weather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1871606DB1DF72681FB0021F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A857D79939C056A1E120D4F4 /* Pods-App1Weather.debug.xcconfig */,
+				9CB41D68FE13671A09F69694 /* Pods-App1Weather.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		964B8C862B252298000FBE5D = {
 			isa = PBXGroup;
 			children = (
 				964B8C912B252298000FBE5D /* App1Weather */,
 				964B8C902B252298000FBE5D /* Products */,
+				1871606DB1DF72681FB0021F /* Pods */,
+				979F587DD9574B744B6B0FD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +83,18 @@
 				964B8C9B2B25229E000FBE5D /* Assets.xcassets */,
 				964B8C9D2B25229E000FBE5D /* LaunchScreen.storyboard */,
 				964B8CA02B25229E000FBE5D /* Info.plist */,
+				964B8CA62B252373000FBE5D /* Constants.swift */,
+				964B8CA82B252454000FBE5D /* Weather.swift */,
 			);
 			path = App1Weather;
+			sourceTree = "<group>";
+		};
+		979F587DD9574B744B6B0FD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				272E3C4B30A42787AFD9FD25 /* Pods_App1Weather.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 964B8CA32B25229E000FBE5D /* Build configuration list for PBXNativeTarget "App1Weather" */;
 			buildPhases = (
+				3B37FB36992879D7F27248C6 /* [CP] Check Pods Manifest.lock */,
 				964B8C8B2B252298000FBE5D /* Sources */,
 				964B8C8C2B252298000FBE5D /* Frameworks */,
 				964B8C8D2B252298000FBE5D /* Resources */,
+				69F142289EDAB86325AFF496 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +165,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B37FB36992879D7F27248C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-App1Weather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69F142289EDAB86325AFF496 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App1Weather/Pods-App1Weather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App1Weather/Pods-App1Weather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App1Weather/Pods-App1Weather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		964B8C8B2B252298000FBE5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +215,8 @@
 				964B8C972B252298000FBE5D /* ViewController.swift in Sources */,
 				964B8C932B252298000FBE5D /* AppDelegate.swift in Sources */,
 				964B8C952B252298000FBE5D /* SceneDelegate.swift in Sources */,
+				964B8CA72B252373000FBE5D /* Constants.swift in Sources */,
+				964B8CA92B252454000FBE5D /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +363,13 @@
 		};
 		964B8CA42B25229E000FBE5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A857D79939C056A1E120D4F4 /* Pods-App1Weather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App1Weather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,11 +392,13 @@
 		};
 		964B8CA52B25229E000FBE5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CB41D68FE13671A09F69694 /* Pods-App1Weather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App1Weather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
